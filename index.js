@@ -6,7 +6,7 @@ const app = express()
 
 app.use(function(req, res, next) {
   // to enable cors in the server, specidy what domain can make the request
-  res.header("Access-Control-Allow-Origin", "http://localhost:8000"); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Origin", "https://kceron.github.io/"); // update to match the domain you will make the request from // localhost::8000
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
@@ -67,7 +67,7 @@ app.listen(PORT, () => {
 
 //     console.log(req.body);
 
-//     sendGrid.setApiKey('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');
+//     sendGrid.setApiKey('');
 //     const msg = {
 //         to: 'kitzel7@gmail.com',
 //         from: req.body.email,
